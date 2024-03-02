@@ -1,0 +1,62 @@
+<style>
+    .container-xxl {
+        max-width: 1200px;
+        margin-top: 10px;
+        margin: 10px auto; /* Center the container */
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+    }
+
+    .info {
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        margin: 5px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .comments {
+        text-align:justify; /* Align comments to the right */
+    }
+
+    .comments .comment {
+        text-align: justify; /* Align individual comments to the left */
+    }
+</style>
+
+<div class="container-xxl"> 
+    <h2>{{title}}</h2>
+    <p><strong><b>Author:</b></strong> {{author}}</p>
+    <p><strong>Category:</strong> {{category}}</p>
+    <img src="{{image}}" alt="Article Image">
+    <p><strong>Content:</strong> {{content}}</p>
+    <p><strong>Date:</strong> {{date}}</p>
+    <p><strong>Likes:</strong> {{likes}}</p>
+    <br>
+    <div class="container comments">
+        <h3><b><u>Comments:</u></b></h3>
+        {{#comments}}
+        <div class="comment">
+            <p><strong>User:</strong> {{user}}</p>
+            <p><strong>Comment:</strong> {{text}}</p>
+        </div>
+        {{/comments}}
+    </div>
+</div>

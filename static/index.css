@@ -1,0 +1,81 @@
+
+body{
+background-color: rgb(237, 253, 255);
+}
+
+
+
+
+/* Set fixed dimensions for carousel items */
+.carousel-item {
+    width: 100%; /* Full width */
+    height: 680px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  /* Ensure images fill the entire carousel item */
+  .carousel-item img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+/* Apply circular clipping to carousel images */
+/* Apply a random shape and shift images to the right side */
+.carousel-item img {
+  width: 300px; /* Set a fixed width for the images */
+    height: 800px;
+  border-radius: 60%;
+  transform: rotate(5deg); /* Adjust the degree of rotation as needed */
+  position:  absolute;
+  left: 40%; /* Shift images to the right by 50% of their container's width */
+  transform-origin: right center; /* Set the origin of the rotation to the right side */
+  box-shadow: 5px 16px 19px rgba(5, 65, 77, 0.8);
+
+}
+
+
+/* CSS for the h1 heading */
+.blog-heading {
+  width: 190px;
+  height: 70px;
+  position: fixed;
+  top: 45%;
+  left: 10%;
+  transform: translateY(-180%);
+  color: #0b0b0b;
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+/* CSS for the highlighted "blog" text */
+.text-highlight {
+  color: #1e00ff; /* Change the color as needed */
+  position: relative;
+  font-size: 90px;
+}
+
+/* CSS for the blinking cursor */
+.typed-cursor {
+  animation: blink 0.7s infinite; /* Adjust the blinking speed as needed */
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.text{
+  width: 50px;
+  height: 50px;
+}
